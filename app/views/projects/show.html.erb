@@ -2,3 +2,5 @@ Project: <%= @project.name%>
 Material: <%= @project.material%>
 Challenge Theme: <%= @project.challenge.theme%>
 Number of Contestants: <%= @project.contestants.count %>
+ 
+Average Contestant Experience: <%@project.contestants.average(:years_of_experience)%>

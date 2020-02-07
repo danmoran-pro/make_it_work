@@ -24,12 +24,30 @@ RSpec.describe "as a visitor" do
 
       project_1.contestants << contestant_1
       project_1.contestants << contestant_2
-      
+
       visit project_path(project_1)
       
       expect(page).to have_content(project_1.name)  
       expect(page).to have_content(project_1.material)  
       expect(page).to have_content("Number of Contestants: 2")
     end   
+
+    it "can see the average age of the contestants on this project" do 
+      challenge_1 = Challenge.create!(theme: "Apartment Furnishings", project_budget: 1500)
+
+      project_1 = challenge_1.projects.create!(name: "Litfit", material: "Lamp Shade")
+
+      contestant_1 = Contestant.create!(name: "Kentaro Kameyama", age: 25, hometown: "Denver", years_of_experience: 5 )
+      contestant_2 = Contestant.create!(name: "Jay McCarroll", age: 25, hometown: "NYC", years_of_experience: 10 )
+      contestant_3 = Contestant.create!(name: "Danny Moran", age: 26, hometown: "Denver", years_of_experience: 2 )
+
+      project_1.contestants << contestant_1
+      project_1.contestants << contestant_2
+      project_1.contestants << contestant_3
+
+      visit project_path(project_1)
+    
+      expect(page).to have_content("Average Contestant Experience: 15.66")
+    end
   end
-end
+end 
