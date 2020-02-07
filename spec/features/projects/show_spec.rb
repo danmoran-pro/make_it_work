@@ -12,8 +12,5 @@ RSpec.describe "as a visitor" do
         expect(page).to have_content(project_1.material)  
         expect(page).to have_content("Apartment Furnishings")  
     end
+  end
 end
-end
-
-# challenge_1 = Challenge.create!(theme: "Apartment Furnishings", project_budget: 1500
-# contestant_1 = Contestant.create!(name: "Kentaro Kameyama", age: 25, hometown: "Denver", years_of_experience: 5 )

@@ -242,12 +242,36 @@
         "lines": [
           1,
           1,
+          1,
           null
         ]
       },
       "/Users/daniels/turing/mod2/finals/make_it_work/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/daniels/turing/mod2/finals/make_it_work/spec/features/projects/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -361,7 +385,7 @@
           null
         ]
       },
-      "/Users/daniels/turing/mod2/finals/make_it_work/app/controllers/projects_controller.rb": {
+      "/Users/daniels/turing/mod2/finals/make_it_work/app/controllers/contestants_controller.rb": {
         "lines": [
           1,
           1,
@@ -376,8 +400,18 @@
           1,
           null
         ]
+      },
+      "/Users/daniels/turing/mod2/finals/make_it_work/app/controllers/projects_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1581097124
+    "timestamp": 1581098540
   }
 }
